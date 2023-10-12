@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.*;
 public class UserController {
     @PostMapping("/create")
     public UserModel create(@RequestBody UserModel user) {
-        System.out.println(user.name);
         return user;
     }
 
